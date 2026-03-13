@@ -246,6 +246,25 @@ border-radius:20px;
 <button type="submit">Wyślij zamówienie</button>
 
 </form>
+<section class="order">
+
+<h1>Zamów projekt domku dla ptaków</h1>
+<p>Wyślij wiadomość, a skontaktuję się z Tobą.</p>
+
+<form action="sendmail.php" method="POST" class="order-form">
+
+<label>Imię</label>
+<input type="text" name="name" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>Wiadomość</label>
+<textarea name="message" rows="5" required></textarea>
+
+<button type="submit">Wyślij wiadomość</button>
+
+</form>
 
 </section>
 </body>
