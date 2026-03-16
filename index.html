@@ -1,126 +1,172 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Architekta</title>
+
+<title>Portfolio Architektoniczne</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<header>
-    <nav class="navbar">
-        <h1 class="logo">Jan Kowalski</h1>
-        <ul class="menu">
-            <li><a href="#about">O mnie</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#experience">Doświadczenie</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
-    </nav>
+<header class="header">
+
+<div class="container nav">
+
+<div class="logo">Jan Kowalski</div>
+
+<ul class="menu">
+<li><a href="#about">O mnie</a></li>
+<li><a href="#portfolio">Projekty</a></li>
+<li><a href="#experience">Doświadczenie</a></li>
+<li><a href="#contact">Kontakt</a></li>
+</ul>
+
+</div>
+
 </header>
 
 
 <section class="hero">
-    <div class="hero-text">
-        <h2>Student Architektury</h2>
-        <p>Projektuję przestrzeń, która łączy estetykę, funkcjonalność i kontekst miejsca.</p>
-        <a href="#portfolio" class="btn">Zobacz portfolio</a>
-    </div>
+
+<div class="hero-content">
+
+<h1>Portfolio Architektoniczne</h1>
+
+<p>
+Student architektury skupiony na projektowaniu
+przestrzeni łączącej funkcjonalność,
+estetykę i kontekst miejsca.
+</p>
+
+<a href="#portfolio" class="button">Zobacz projekty</a>
+
+</div>
+
 </section>
 
 
-<section id="about" class="about">
-    <div class="container">
-        <h2>O mnie</h2>
-        <p>
-            Jestem studentem architektury z pasją do projektowania nowoczesnych,
-            funkcjonalnych przestrzeni. Interesuję się architekturą współczesną,
-            urbanistyką oraz projektowaniem zrównoważonym.
-        </p>
-    </div>
+<section id="about" class="section about">
+
+<div class="container narrow">
+
+<h2>O mnie</h2>
+
+<p>
+Jestem studentem architektury z pasją do projektowania
+nowoczesnych i harmonijnych przestrzeni.
+Interesuję się architekturą współczesną,
+urbanistyką oraz projektowaniem zrównoważonym.
+</p>
+
+</div>
+
 </section>
 
 
-<section id="portfolio" class="portfolio">
-    <div class="container">
-        <h2>Portfolio</h2>
+<section id="portfolio" class="section portfolio">
 
-        <div class="projects">
+<div class="container">
 
-            <div class="project">
-                <img src="img/projekt1.jpg" alt="">
-                <div class="project-info">
-                    <h3>Dom Jednorodzinny</h3>
-                    <p>Projekt koncepcyjny domu w stylu modernistycznym.</p>
-                </div>
-            </div>
+<h2>Wybrane Projekty</h2>
 
-            <div class="project">
-                <img src="img/projekt2.jpg" alt="">
-                <div class="project-info">
-                    <h3>Biblioteka Miejska</h3>
-                    <p>Projekt przestrzeni publicznej z dużą ilością światła.</p>
-                </div>
-            </div>
+<div class="grid">
 
-            <div class="project">
-                <img src="img/projekt3.jpg" alt="">
-                <div class="project-info">
-                    <h3>Pawilon Wystawowy</h3>
-                    <p>Minimalistyczna architektura inspirowana naturą.</p>
-                </div>
-            </div>
+<div class="project">
 
-        </div>
-    </div>
+<img src="img/projekt1.jpg">
+
+<div class="project-overlay">
+<h3>Dom Jednorodzinny</h3>
+</div>
+
+</div>
+
+
+<div class="project">
+
+<img src="img/projekt2.jpg">
+
+<div class="project-overlay">
+<h3>Biblioteka Miejska</h3>
+</div>
+
+</div>
+
+
+<div class="project">
+
+<img src="img/projekt3.jpg">
+
+<div class="project-overlay">
+<h3>Pawilon Wystawowy</h3>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 
-<section id="experience" class="experience">
-    <div class="container">
-        <h2>Doświadczenie</h2>
+<section id="experience" class="section experience">
 
-        <div class="timeline">
+<div class="container narrow">
 
-            <div class="timeline-item">
-                <h3>2025 – praktyki</h3>
-                <p>Pracownia Architektoniczna XYZ – modelowanie 3D, rysunki techniczne.</p>
-            </div>
+<h2>Doświadczenie</h2>
 
-            <div class="timeline-item">
-                <h3>2024 – konkurs studencki</h3>
-                <p>Projekt koncepcyjny przestrzeni publicznej – wyróżnienie.</p>
-            </div>
+<div class="timeline">
 
-            <div class="timeline-item">
-                <h3>2023 – projekty studenckie</h3>
-                <p>Budynki mieszkalne, przestrzenie publiczne i analiza urbanistyczna.</p>
-            </div>
+<div class="item">
+<span>2025</span>
+<p>Praktyki – Pracownia Architektoniczna XYZ</p>
+</div>
 
-        </div>
-    </div>
+<div class="item">
+<span>2024</span>
+<p>Konkurs architektoniczny – wyróżnienie</p>
+</div>
+
+<div class="item">
+<span>2023</span>
+<p>Projekty studenckie – budynki mieszkalne i przestrzeń publiczna</p>
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 
-<section id="contact" class="contact">
-    <div class="container">
-        <h2>Kontakt</h2>
-        <p>Email: jan.kowalski@email.com</p>
-        <p>LinkedIn: linkedin.com/in/jankowalski</p>
-    </div>
+<section id="contact" class="section contact">
+
+<div class="container narrow">
+
+<h2>Kontakt</h2>
+
+<p>Email: jan@email.com</p>
+<p>LinkedIn: linkedin.com/jan</p>
+
+</div>
+
 </section>
 
 
 <footer>
-    <p>© 2026 Jan Kowalski – Portfolio Architektoniczne</p>
+
+<p>© 2026 Jan Kowalski</p>
+
 </footer>
 
 </body>
-</html>
+
 </html>
