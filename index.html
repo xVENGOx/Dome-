@@ -2,270 +2,125 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>Szalony Architekt Ptasich Domków</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Architekta</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-body{
-    margin:0;
-    font-family: Georgia, "Times New Roman", serif;
-    background: linear-gradient(120deg,#f2e4c8,#c6a27a);
-    color:#3b2a1a;
-    overflow-x:hidden;
-}
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-/* LOGO */
-
-.logo{
-    text-align:center;
-    font-size:50px;
-    margin-top:30px;
-    color:#5a3e2b;
-    text-shadow:0 2px 5px rgba(0,0,0,0.15);
-}
-
-.subtitle{
-    text-align:center;
-    font-size:20px;
-    margin-bottom:40px;
-    color:#6b4c35;
-}
-
-/* CHMURY */
-
-.cloud{
-    position:absolute;
-    background:#fff4e3;
-    border-radius:50px;
-    opacity:0.7;
-    animation: float 40s infinite linear;
-}
-
-.cloud::before,
-.cloud::after{
-    content:"";
-    position:absolute;
-    background:#fff4e3;
-    border-radius:50%;
-}
-
-.cloud::before{
-    width:60px;
-    height:60px;
-    top:-20px;
-    left:10px;
-}
-
-.cloud::after{
-    width:40px;
-    height:40px;
-    top:-10px;
-    left:50px;
-}
-
-@keyframes float{
-    from{left:-200px}
-    to{left:110%}
-}
-
-/* KARTY PROJEKTÓW */
-
-.projects{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:30px;
-    padding:40px;
-}
-
-.card{
-    width:260px;
-    padding:20px;
-    border-radius:16px;
-    background:#f7ead7;
-    box-shadow:0 8px 20px rgba(0,0,0,0.15);
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.card h2{
-    margin-top:0;
-    color:#4a3322;
-}
-
-.bird{
-    font-size:40px;
-    text-align:center;
-}
-
-/* PRZYCISK */
-
-button{
-    display:block;
-    margin:40px auto;
-    padding:14px 34px;
-    font-size:18px;
-    border:none;
-    border-radius:8px;
-    background:#7b5236;
-    color:white;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-button:hover{
-    background:#5c3d29;
-}
-
-/* STOPKA */
-
-footer{
-    text-align:center;
-    padding:30px;
-    font-size:14px;
-    background:#d8c0a4;
-    color:#4a3322;
-}
-
-</style>
 </head>
 
 <body>
 
-<div class="cloud" style="width:120px;height:50px;top:80px;"></div>
-<div class="cloud" style="width:160px;height:60px;top:200px;animation-duration:45s;"></div>
+<header>
+    <nav class="navbar">
+        <h1 class="logo">Jan Kowalski</h1>
+        <ul class="menu">
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#experience">Doświadczenie</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
 
-<div class="logo">🏠🐦 SZALONY ARCHITEKT</div>
-<div class="subtitle">Projektuję najbardziej absurdalne domki dla ptaków w tej galaktyce</div>
 
-<section class="projects">
-
-<div class="card">
-<div class="bird">🦉</div>
-<h2>Wieża dla Sów</h2>
-<p>Minimalistyczna wieża z 12 balkonami i prywatnym obserwatorium księżyca.</p>
-</div>
-
-<div class="card">
-<div class="bird">🐦</div>
-<h2>Kapsuła Kosmiczna</h2>
-<p>Domek dla ptaków inspirowany rakietą. Idealny dla wróbli z ambicjami.</p>
-    
-<a href="#kapsula">
-<button>Zobacz projekt 🚀</button>
-</a>
-
-</div>
-
-<div class="card">
-<div class="bird">🦜</div>
-<h2>Tropikalna Willa</h2>
-<p>Luksusowy domek z bambusa, palmą i miejscem na karaoke dla papug.</p>
-</div>
-
-<div class="card">
-<div class="bird">🐤</div>
-<h2>Blok Mieszkalny</h2>
-<p>Nowoczesny blok dla 40 rodzin sikorek. Parking na żołędzie w cenie.</p>
-</div>
-
+<section class="hero">
+    <div class="hero-text">
+        <h2>Student Architektury</h2>
+        <p>Projektuję przestrzeń, która łączy estetykę, funkcjonalność i kontekst miejsca.</p>
+        <a href="#portfolio" class="btn">Zobacz portfolio</a>
+    </div>
 </section>
 
-<button>🐦 Zamów szalony projekt</button>
+
+<section id="about" class="about">
+    <div class="container">
+        <h2>O mnie</h2>
+        <p>
+            Jestem studentem architektury z pasją do projektowania nowoczesnych,
+            funkcjonalnych przestrzeni. Interesuję się architekturą współczesną,
+            urbanistyką oraz projektowaniem zrównoważonym.
+        </p>
+    </div>
+</section>
+
+
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <h2>Portfolio</h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <img src="img/projekt1.jpg" alt="">
+                <div class="project-info">
+                    <h3>Dom Jednorodzinny</h3>
+                    <p>Projekt koncepcyjny domu w stylu modernistycznym.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="img/projekt2.jpg" alt="">
+                <div class="project-info">
+                    <h3>Biblioteka Miejska</h3>
+                    <p>Projekt przestrzeni publicznej z dużą ilością światła.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="img/projekt3.jpg" alt="">
+                <div class="project-info">
+                    <h3>Pawilon Wystawowy</h3>
+                    <p>Minimalistyczna architektura inspirowana naturą.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="experience" class="experience">
+    <div class="container">
+        <h2>Doświadczenie</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <h3>2025 – praktyki</h3>
+                <p>Pracownia Architektoniczna XYZ – modelowanie 3D, rysunki techniczne.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>2024 – konkurs studencki</h3>
+                <p>Projekt koncepcyjny przestrzeni publicznej – wyróżnienie.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>2023 – projekty studenckie</h3>
+                <p>Budynki mieszkalne, przestrzenie publiczne i analiza urbanistyczna.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Kontakt</h2>
+        <p>Email: jan.kowalski@email.com</p>
+        <p>LinkedIn: linkedin.com/in/jankowalski</p>
+    </div>
+</section>
+
 
 <footer>
-© 2026 Szalony Architekt Ptasich Domków • Projektuję dla ptaków od 1997
+    <p>© 2026 Jan Kowalski – Portfolio Architektoniczne</p>
 </footer>
-<section id="kapsula" style="padding:80px 20px; background:#0a001f; text-align:center;">
 
-<h1 style="font-size:50px;">🚀 Kapsuła Kosmiczna</h1>
-<p>Eksperymentalny domek dla ptaków inspirowany rakietami kosmicznymi.</p>
-
-<div style="
-max-width:900px;
-margin:auto;
-margin-top:40px;
-background:rgba(255,255,255,0.1);
-padding:40px;
-border-radius:20px;
-">
-
-<div style="font-size:120px;">🚀</div>
-
-<h2>Specyfikacja</h2>
-
-<ul style="list-style:none; font-size:18px;">
-<li>🐦 Pojemność: 6 wróbli astronautów</li>
-<li>🪵 Materiał: drewno + aluminium</li>
-<li>🌧 Odporność: deszcz, śnieg i meteoryty*</li>
-<li>🛰 Antena: komunikacja z kosmosem</li>
-<li>🌙 Okno obserwacyjne księżyca</li>
-</ul>
-
-<a href="#">
-<button>⬅ Powrót na górę</button>
-</a>
-
-</div>
-<section class="order">
-
-<h1>Zamów indywidualny projekt</h1>
-<p>Masz pomysł na wyjątkowy domek dla ptaków? Opisz go, a przygotuję projekt.</p>
-
-<form class="order-form">
-
-<div class="form-group">
-<label>Imię</label>
-<input type="text" placeholder="Twoje imię">
-</div>
-
-<div class="form-group">
-<label>Email</label>
-<input type="email" placeholder="twoj@email.com">
-</div>
-
-<div class="form-group">
-<label>Typ projektu</label>
-<select>
-<option>Mały domek ogrodowy</option>
-<option>Kapsuła kosmiczna</option>
-<option>Wieża dla sów</option>
-<option>Blok dla wielu ptaków</option>
-<option>Projekt indywidualny</option>
-</select>
-</div>
-
-<div class="form-group">
-<label>Opis pomysłu</label>
-<textarea rows="5" placeholder="Opisz swój pomysł na domek dla ptaków..."></textarea>
-</div>
-
-<button type="submit">Wyślij zamówienie</button>
-
-</form>
-<section class="order">
-
-<h1>Zamów projekt domku dla ptaków</h1>
-<p>Wyślij wiadomość, a skontaktuję się z Tobą.</p>
-
-<form action="sendmail.php" method="POST" class="order-form">
-
-<label>Imię</label>
-<input type="text" name="name" required>
-
-<label>Email</label>
-<input type="email" name="email" required>
-
-<label>Wiadomość</label>
-<textarea name="message" rows="5" required></textarea>
-
-<button type="submit">Wyślij wiadomość</button>
-
-</form>
-
-</section>
 </body>
+</html>
 </html>
