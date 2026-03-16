@@ -1,0 +1,139 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: 'Inter', sans-serif;
+color:#222;
+background:white;
+line-height:1.6;
+}
+
+h1,h2,h3{
+font-family:'Playfair Display', serif;
+}
+
+.container{
+width:85%;
+margin:auto;
+}
+
+header{
+background:white;
+border-bottom:1px solid #eee;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+
+.menu{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+.menu a{
+text-decoration:none;
+color:#222;
+font-weight:500;
+}
+
+.hero{
+height:80vh;
+background:url("img/hero.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero-text{
+background:rgba(0,0,0,0.4);
+padding:40px;
+}
+
+.hero h2{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:white;
+color:black;
+text-decoration:none;
+font-weight:500;
+}
+
+.about{
+padding:80px 0;
+text-align:center;
+max-width:700px;
+margin:auto;
+}
+
+.portfolio{
+padding:80px 0;
+background:#fafafa;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.project{
+background:white;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.project img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.project-info{
+padding:20px;
+}
+
+.experience{
+padding:80px 0;
+}
+
+.timeline{
+margin-top:40px;
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+.timeline-item{
+border-left:3px solid black;
+padding-left:20px;
+}
+
+.contact{
+padding:80px 0;
+text-align:center;
+background:#fafafa;
+}
+
+footer{
+text-align:center;
+padding:20px;
+font-size:14px;
+border-top:1px solid #eee;
+}
